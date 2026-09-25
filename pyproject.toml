@@ -15,4 +15,4 @@ authors = [
 where = ["src"]
 
 [tool.setuptools.dynamic]
-version = {attr = "Altermath.__version__"}
+version = {attr = "altermath.__version__"}
