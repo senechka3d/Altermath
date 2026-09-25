@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Altermath"
+dynamic = ["version"]
+description = "A simple mathematical functions library"
+requires-python = ">=3.9"
+authors = [
+    { name = "senechka3d" }
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "Altermath.__version__"}
