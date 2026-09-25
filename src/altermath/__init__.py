@@ -3,4 +3,4 @@ from .general import (add, subtract, multiply, divide, mod, fdiv, square,
 from .constants import PI, E, PHI
 
 
-__version__ = "1.0"
+__version__ = "1.0.1"
