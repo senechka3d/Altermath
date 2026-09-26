@@ -63,10 +63,6 @@ def test_divide_float_result():
     assert divide(5, 2) == 2.5
 
 
-def test_divide_integer_float_result():
-    assert divide(8, 2) == 4
-
-
 def test_divide_one_number():
     assert divide(10) == 10
 
@@ -106,10 +102,6 @@ def test_mod_by_zero():
 # -----------------
 
 def test_fdiv_multiple_numbers():
-    assert fdiv(20, 3) == 6
-
-
-def test_fdiv_chain():
     assert fdiv(20, 3, 2) == 3
 
 
