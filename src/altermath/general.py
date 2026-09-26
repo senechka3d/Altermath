@@ -111,3 +111,18 @@ def root(*nums, index):
         else:
             r.append(sign * x)
     return r[0] if len(r) == 1 else r
+
+
+def factorial(*nums):
+    if not nums:
+        return None
+    r = []
+    for n in nums:
+        if not isinstance(n, int) or n < 0:
+            r.append(None)
+            continue
+        x = 1
+        for i in range(1, n+1):
+            x *= i
+        r.append(x)
+    return r[0] if len(r) == 1 else r

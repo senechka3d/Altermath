@@ -1,6 +1,6 @@
 import pytest
 
-from src.altermath import add, subtract, multiply, divide, mod, fdiv
+from src.altermath import add, subtract, multiply, divide, mod, fdiv, factorial
 
 
 # -----------------
@@ -124,3 +124,27 @@ def test_fdiv_empty():
 def test_fdiv_by_zero():
     with pytest.raises(ZeroDivisionError):
         fdiv(10, 0)
+
+
+# -----------------
+# factorial
+# -----------------
+
+def test_factorial_multiple_numbers():
+    assert factorial(3, 5, 7) == [6, 120, 5040]
+
+
+def test_factorial_one_number():
+    assert factorial(6) == 720
+
+
+def test_factorial_float():
+    assert factorial(2.5) == None
+
+
+def test_factorial_negative():
+    assert factorial(-1) == None
+
+
+def test_factorial_empty():
+    assert factorial() == None

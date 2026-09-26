@@ -1,5 +1,5 @@
 from .general import (add, subtract, multiply, divide, mod, fdiv, square,
-                       cube, power, sqrt, root)
+                       cube, power, sqrt, root, factorial)
 from .constants import PI, E, PHI
 from .rounding import floor, ceil, trunc
 
