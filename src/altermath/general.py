@@ -4,7 +4,7 @@ def add(*nums):
     r = 0
     for n in nums: 
         r += n
-    return r
+    return int(r) if r.is_integer() else r
 
 
 def subtract(*nums):
@@ -13,7 +13,7 @@ def subtract(*nums):
     r = nums[0]
     for n in nums[1:]: 
         r -= n
-    return r
+    return int(r) if r.is_integer() else r
 
 
 def multiply(*nums):
@@ -22,7 +22,7 @@ def multiply(*nums):
     r = nums[0]
     for n in nums[1:]:
         r *= n
-    return r
+    return int(r) if r.is_integer() else r
 
 
 def divide(*nums):
@@ -33,7 +33,7 @@ def divide(*nums):
         r /= n
     if isinstance(r, float) and r.is_integer():
         return int(r)
-    return r
+    return int(r) if r.is_integer() else r
 
 
 def mod(*nums):
@@ -42,7 +42,7 @@ def mod(*nums):
     r = nums[0]
     for n in nums[1:]:
         r %= n
-    return r
+    return int(r) if r.is_integer() else r
 
 
 def fdiv(*nums):
@@ -51,7 +51,7 @@ def fdiv(*nums):
     r = nums[0]
     for n in nums[1:]:
         r //= n
-    return r
+    return int(r) if r.is_integer() else r
 
 
 def square(*nums):
